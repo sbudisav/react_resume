@@ -136,5 +136,17 @@
       "username": "rbringloe5",
       "admin": false
     }
+  ], 
+  "paintings": [{
+      "id": 1,
+      "image_url": "https://assets.vogue.com/photos/6140af417ef7d70f4de8e298/3:4/w_2215,h_2954,c_limit/VO1021_PleinAir_01.jpg",
+      "title": "Aenean auctor gravida sem.",
+      "description": "A work I did in Paris"
+    }, {
+      "id": 2,
+      "image_url": "https://digthedunes.com/wp-content/uploads/2018/08/Anne-Corlett-plein-air-2018.jpg",
+      "title": "Morbi porttitor lorem.",
+      "description": "A work I did in Italy"
+    }
   ]
 }
