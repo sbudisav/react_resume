@@ -1,13 +1,29 @@
-import { useState, useEffect } from 'react'
-import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
-import 'react-pro-sidebar/dist/css/styles.css';
-import Header from "./components/Header"
+import { useState, useEffect, useReducer } from 'react'
+import { Row, Col } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Posts from "./components/writing/Posts"
 import Paintings from "./components/art/Paintings"
+import Sidebar from "./components/Sidebar"
+
+const initialViewState = {
+  view: 'home-page'
+  //editPostDetails: {}
+};
+
+// view.view is what the current state has. Need to make that easier to read. 
+const viewReducer = (state, action) => {
+  switch (action.type) {
+    case 'set_view':
+      return { ...state, view: action.view.selectedKey };
+    default:
+      return state;
+  }
+};
 
 function App() {
 
   const [posts, setPosts] = useState([]);
+  const [view, setView] = useReducer(viewReducer, initialViewState);
 
   useEffect(()=> {
     const getPosts = async () => {
@@ -40,31 +56,38 @@ function App() {
     return data;
   }
 
+  useEffect(() => {
+    console.log(view.view);
+  }, [view]);
 
   return (
-    <div>
-      <div>
-        <ProSidebar>
-          <Menu iconShape="square">
-            <MenuItem>Dashboard</MenuItem>
-            <SubMenu title="Components">
-              <MenuItem>Component 1</MenuItem>
-              <MenuItem>Component 2</MenuItem>
-            </SubMenu>
-          </Menu>
-        </ProSidebar>
+    <>
+      <div className='container'>
+        <Row>
+          <Col lg={1}>
+            <Sidebar 
+              setPageView={selectedKey => {
+                setView({ type: 'set_view', view: selectedKey})
+              }}
+            />
+          </Col>
+          {view.view === 'writing-page' &&
+            <Col lg={10}>
+
+                <Posts posts={ posts } />
+            </Col>
+          }
+          {view.view === 'art-page' &&
+            <Col lg={10} className="paintings">
+                <Paintings
+                  paintings={ paintings }
+                />
+            </Col>
+          }
+
+        </Row>
       </div>
-      
-      <div className="container">
-        <Header className="header"> </Header>
-        <Posts
-          posts={ posts }
-        />
-        <Paintings
-          paintings={ paintings }
-        />
-      </div>
-    </div>
+    </>
   );
 }
 

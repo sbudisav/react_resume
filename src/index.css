@@ -16,13 +16,12 @@ body {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
+  max-height: 800px;
   margin: 30px auto;
-  overflow: auto;
-  min-height: 300px;
-  border: 1px solid steelblue;
   padding: 30px;
   border-radius: 5px;
+  overflow: auto;
 }
 
 .header {
@@ -30,6 +29,27 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    margin-left: 50px;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.navLink {
+  transition: box-shadow .3s;
+  border-radius: 25px;
+}
+
+.navLink:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  border-radius: 25px;
+}
+
+.writing {
+
 }
 
 .btn {

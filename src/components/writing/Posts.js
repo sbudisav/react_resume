@@ -4,6 +4,10 @@ import Post from './Post'
 const Posts = ({ posts }) => {
   return (
     <>
+      <header className='header'>
+        <h1>My Writings</h1>
+      </header>
+
       {posts.map((post, id) => (
         <Post key={id} post={post} />
       ))}
