@@ -2,94 +2,96 @@
   "posts": 
     [{
       "id": 1,
-      "title": "Languages in Europe",
+      "title": "In hac habitasse platea dictumst.",
+      "date_posted": "2021-04-23T18:25:43.511Z",
       "content": "The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages."
     }, {
       "id": 2,
-      "title": "The Writings of Werther, on life and about happiness",
-      "content": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now."
+      "title": "Donec ut dolor. ",
+      "date_posted": "2021-04-28T18:25:43.511Z",
+      "content": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. \\n A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. \\n I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart."
     }, {
       "id": 3,
-      "title": "The opening of Kafka's The Metamorphasis demonstrating the writing ability of a master",
+      "title": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla",
+      "date_posted": "2021-05-23T18:25:43.511Z",
       "content": "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. What's happened to me? he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. "
     }, {
       "id": 4,
-      "title": "In hac habitasse platea dictumst.",
+      "title": "Etiam faucibus cursus urna.",
+      "date_posted": "2021-05-28T18:25:43.511Z",
       "content": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo."
     }, {
       "id": 5,
       "title": "Donec ut dolor.",
+      "date_posted": "2021-08-10T18:25:43.511Z",
       "content": "Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum."
     }, {
       "id": 6,
-      "title": "Mauris ullamcorper purus sit amet nulla.",
-      "content": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique."
+      "title": "Languages in Europe",
+      "date_posted": "2021-10-05T18:25:43.511Z",
+      "content": "The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. \\n The new common language will be more simple and regular than the existing European languages. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique."
     }, {
       "id": 7,
-      "title": "Duis consequat dui nec nisi volutpat eleifend.",
-      "content": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis."
+      "title": "The Writings of Werther, on life and about happiness",
+      "date_posted": "2021-11-09T18:25:43.511Z",
+      "content": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. \\n A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. \\n I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. \\n I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now."
     }],
 
   "comments": [{
       "id": 1,
       "user_id": 2,
-      "post_id": 5,
+      "username": "tgreenig1",
+      "post_id": 6,
+      "date_posted": "2021-10-06T18:25:43.511Z",
       "content": "Aenean auctor gravida sem."
     }, {
       "id": 2,
       "user_id": 2,
-      "post_id": 5,
+      "username": "tgreenig1",
+      "post_id": 7,
+      "date_posted": "2021-11-10T18:25:43.511Z",      
       "content": "Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl."
     }, {
       "id": 3,
-      "user_id": 5,
-      "post_id": 3,
+      "user_id": 2,
+      "username": "tgreenig1",
+      "post_id": 5,
+      "date_posted": "2021-08-11T18:25:43.511Z",
       "content": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa."
     }, {
       "id": 4,
-      "user_id": 5,
-      "post_id": 2,
+      "user_id": 6,
+      "username": "rbringloe5",
+      "post_id": 7,
+      "date_posted": "2021-11-11T18:25:43.511Z",
       "content": "Curabitur convallis."
     }, {
       "id": 5,
-      "user_id": 5,
-      "post_id": 5,
+      "user_id": 3,
+      "username": "btarbox2",
+      "post_id": 7,
+      "date_posted": "2021-11-15T18:25:43.511Z",
       "content": "Sed accumsan felis."
     }, {
       "id": 6,
       "user_id": 3,
-      "post_id": 3,
-      "content": "Nulla ac enim."
+      "username": "btarbox2",
+      "post_id": 6,
+      "date_posted": "2021-10-08T18:25:43.511Z",
+      "content": "Sed accumsan felis."
     }, {
-      "id": 7,
-      "user_id": 3,
-      "post_id": 5,
-      "content": "Suspendisse potenti."
+      "user_id": 4,
+      "username": "lfenelow3",
+      "post_id": 7,
+      "date_posted": "2021-11-16T18:25:43.511Z",
+      "content": "Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus."
     }, {
       "id": 8,
       "user_id": 5,
-      "post_id": 6,
+      "username": "bdorian4",
+      "post_id": 7,
+      "date_posted": "2021-11-20T18:25:43.511Z",
       "content": "Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci."
-    }, {
-      "id": 9,
-      "user_id": 6,
-      "post_id": 4,
-      "content": "Pellentesque at nulla."
-    }, {
-      "id": 10,
-      "user_id": 4,
-      "post_id": 6,
-      "content": "Aliquam sit amet diam in magna bibendum imperdiet."
-    }, {
-      "id": 11,
-      "user_id": 2,
-      "post_id": 4,
-      "content": "Maecenas tincidunt lacus at velit."
-    }, {
-      "id": 12,
-      "user_id": 5,
-      "post_id": 1,
-      "content": "Curabitur gravida nisi at nibh."
     }],
 
   "accounts": [
@@ -147,6 +149,21 @@
       "image_url": "https://digthedunes.com/wp-content/uploads/2018/08/Anne-Corlett-plein-air-2018.jpg",
       "title": "Morbi porttitor lorem.",
       "description": "A work I did in Italy"
+    }, {
+      "id": 3,
+      "image_url": "https://assets.vogue.com/photos/6140af417ef7d70f4de8e298/3:4/w_2215,h_2954,c_limit/VO1021_PleinAir_01.jpg",
+      "title": "Morbi porttitor lorem.",
+      "description": "A work I did in Spain"
+    }, {
+      "id": 4,
+      "image_url": "https://digthedunes.com/wp-content/uploads/2018/08/Anne-Corlett-plein-air-2018.jpg",
+      "title": "Morbi porttitor lorem.",
+      "description": "A work I did in Russia"
+    }, {
+      "id": 5,
+      "image_url": "https://assets.vogue.com/photos/6140af417ef7d70f4de8e298/3:4/w_2215,h_2954,c_limit/VO1021_PleinAir_01.jpg",
+      "title": "Morbi porttitor lorem.",
+      "description": "A work I did in Egypt"
     }
   ]
 }

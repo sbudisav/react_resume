@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Posts from "./components/writing/Posts"
 import Paintings from "./components/art/Paintings"
 import Sidebar from "./components/Sidebar"
+import Moment from 'react-moment';
 
 const initialViewState = {
   view: 'home-page'
@@ -27,16 +28,16 @@ function App() {
 
   useEffect(()=> {
     const getPosts = async () => {
-      const postsFromServer = await fetchPostContent()
-      setPosts(postsFromServer)
+      const postsFromServer = await fetchPostContent();
+      setPosts(postsFromServer);
     }
     getPosts();
   }, [])
   // Last array is dependency array, put add blog post in there so it updates after adding. 
 
   const fetchPostContent = async () => {
-    const res = await fetch('http://localhost:5000/posts')
-    const data = await res.json()
+    const res = await fetch('http://localhost:5000/posts');
+    const data = await res.json();
     return data;
   }
 
@@ -44,15 +45,15 @@ function App() {
 
   useEffect(() => {
     const getPaintings = async () => {
-      const paintingsFromServer = await fetchPaintings()
-      setPaintings(paintingsFromServer)
+      const paintingsFromServer = await fetchPaintings();
+      setPaintings(paintingsFromServer);
     }
     getPaintings();
   }, [])
 
   const fetchPaintings = async () => {
-    const res = await fetch('http://localhost:5000/paintings')
-    const data = await res.json()
+    const res = await fetch('http://localhost:5000/paintings');
+    const data = await res.json();
     return data;
   }
 
