@@ -4,10 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Posts from "./components/writing/Posts"
 import Paintings from "./components/art/Paintings"
 import Sidebar from "./components/Sidebar"
-import Moment from 'react-moment';
 
 const initialViewState = {
-  view: 'home-page'
+  view: 'home-page',
+  showComments: false
   //editPostDetails: {}
 };
 
@@ -29,6 +29,11 @@ function App() {
   useEffect(()=> {
     const getPosts = async () => {
       const postsFromServer = await fetchPostContent();
+
+      postsFromServer.sort(function(a,b){
+        return new Date(b.date_posted) - new Date(a.date_posted)
+      });
+
       setPosts(postsFromServer);
     }
     getPosts();
@@ -56,10 +61,6 @@ function App() {
     const data = await res.json();
     return data;
   }
-
-  useEffect(() => {
-    console.log(view.view);
-  }, [view]);
 
   return (
     <>

@@ -52,6 +52,15 @@ body {
 
 }
 
+.comments-section {
+  text-align: center;
+  display: flex;
+}
+
+.Accordion.Header {
+  text-align:center;
+}
+
 .btn {
   display: inline-block;
   background: #000;

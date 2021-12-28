@@ -10,8 +10,8 @@ const Posts = ({ posts }) => {
         <h1>My Writings</h1>
       </header>
 
-      {posts.map((post, id) => (
-        <Post key={id} post={post} />
+      {posts.map((post) => (
+        <Post key={post.id} post={post} />
       ))}
     </>
   )
