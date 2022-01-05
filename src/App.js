@@ -4,18 +4,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Posts from "./components/writing/Posts"
 import Paintings from "./components/art/Paintings"
 import Sidebar from "./components/Sidebar"
+import request from './components/services/request';
 
 const initialViewState = {
   view: 'home-page',
-  showComments: false
-  //editPostDetails: {}
+  posts: [],
+  paintings: []
 };
 
-// view.view is what the current state has. Need to make that easier to read. 
 const viewReducer = (state, action) => {
   switch (action.type) {
-    case 'set_view':
-      return { ...state, view: action.view.selectedKey };
+    case 'set_page':
+      return { ...state, page: action.page.selectedKey };
+    case 'set_posts':
+      return { ...state, posts: action.posts };
+    case 'set_paintings':
+      return { ...state, paintings: action.paintings };
     default:
       return state;
   }
@@ -24,43 +28,38 @@ const viewReducer = (state, action) => {
 function App() {
 
   const [posts, setPosts] = useState([]);
+  const [paintings, setPaintings] = useState([]);
+
   const [view, setView] = useReducer(viewReducer, initialViewState);
+
+  // to do, add all paints and posts to reducer
 
   useEffect(()=> {
     const getPosts = async () => {
-      const postsFromServer = await fetchPostContent();
-
+      const postsFromServer = await request.getPostsFromServer();
       postsFromServer.sort(function(a,b){
         return new Date(b.date_posted) - new Date(a.date_posted)
       });
-
       setPosts(postsFromServer);
+
+      setView({type: 'set_posts', posts: postsFromServer });
+      console.log("state from app");
+      console.log(view);
     }
     getPosts();
   }, [])
   // Last array is dependency array, put add blog post in there so it updates after adding. 
 
-  const fetchPostContent = async () => {
-    const res = await fetch('http://localhost:5000/posts');
-    const data = await res.json();
-    return data;
-  }
-
-  const [paintings, setPaintings] = useState([]);
-
   useEffect(() => {
     const getPaintings = async () => {
-      const paintingsFromServer = await fetchPaintings();
+      const paintingsFromServer = await request.getPaintingsFromServer();
+
+      setView({type: 'set_paintings', paintings: paintingsFromServer });
       setPaintings(paintingsFromServer);
     }
     getPaintings();
   }, [])
 
-  const fetchPaintings = async () => {
-    const res = await fetch('http://localhost:5000/paintings');
-    const data = await res.json();
-    return data;
-  }
 
   return (
     <>
@@ -69,17 +68,17 @@ function App() {
           <Col lg={1}>
             <Sidebar 
               setPageView={selectedKey => {
-                setView({ type: 'set_view', view: selectedKey})
+                setView({ type: 'set_page', page: selectedKey})
               }}
             />
           </Col>
-          {view.view === 'writing-page' &&
+          {view.page === 'writing-page' &&
             <Col lg={10}>
 
                 <Posts posts={ posts } />
             </Col>
           }
-          {view.view === 'art-page' &&
+          {view.page === 'art-page' &&
             <Col lg={10} className="paintings">
                 <Paintings
                   paintings={ paintings }

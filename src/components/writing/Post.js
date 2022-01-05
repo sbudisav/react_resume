@@ -1,11 +1,33 @@
 import Moment from 'react-moment';
 import Comment from './Comment';
 import { ListGroup, Button, Accordion } from "react-bootstrap";
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useReducer } from 'react'
+
+
+const postInitialState = {
+  title: '', 
+  date_posted: '',
+  content: '', 
+  comments: []
+}
+
+const postReducer = (state, action) => {
+  switch (action.type) {
+    case 'set_schedule':
+      return { ...state, view: action.view.selectedKey };
+    default:
+      return state;
+  }
+};
 
 const Post = ({ post }) => {
   const [showComments, setShowComments] = useState(false);
   const [comments, setComments] = useState([]);
+
+  const [postState, setPostState] = useReducer(postReducer, postInitialState);
+
+  // console.log("state in post");
+  // console.log(postState);
 
   useEffect(() => {
     const getComments = async () => {
