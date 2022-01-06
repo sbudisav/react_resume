@@ -1,4 +1,4 @@
-import { useState, useEffect, useReducer } from 'react'
+import { useEffect, useReducer } from 'react'
 import { Row, Col } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Posts from "./components/writing/Posts"
@@ -26,10 +26,6 @@ const viewReducer = (state, action) => {
 };
 
 function App() {
-
-  const [posts, setPosts] = useState([]);
-  const [paintings, setPaintings] = useState([]);
-
   const [view, setView] = useReducer(viewReducer, initialViewState);
 
   // to do, add all paints and posts to reducer
@@ -40,11 +36,7 @@ function App() {
       postsFromServer.sort(function(a,b){
         return new Date(b.date_posted) - new Date(a.date_posted)
       });
-      setPosts(postsFromServer);
-
       setView({type: 'set_posts', posts: postsFromServer });
-      console.log("state from app");
-      console.log(view);
     }
     getPosts();
   }, [])
@@ -53,9 +45,7 @@ function App() {
   useEffect(() => {
     const getPaintings = async () => {
       const paintingsFromServer = await request.getPaintingsFromServer();
-
       setView({type: 'set_paintings', paintings: paintingsFromServer });
-      setPaintings(paintingsFromServer);
     }
     getPaintings();
   }, [])
@@ -75,13 +65,13 @@ function App() {
           {view.page === 'writing-page' &&
             <Col lg={10}>
 
-                <Posts posts={ posts } />
+                <Posts posts={ view.posts } />
             </Col>
           }
           {view.page === 'art-page' &&
             <Col lg={10} className="paintings">
                 <Paintings
-                  paintings={ paintings }
+                  paintings={ view.paintings }
                 />
             </Col>
           }

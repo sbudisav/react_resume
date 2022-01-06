@@ -1,42 +1,19 @@
 import Moment from 'react-moment';
 import Comment from './Comment';
 import { ListGroup, Button, Accordion } from "react-bootstrap";
-import { useState, useEffect, useReducer } from 'react'
-
-
-const postInitialState = {
-  title: '', 
-  date_posted: '',
-  content: '', 
-  comments: []
-}
-
-const postReducer = (state, action) => {
-  switch (action.type) {
-    case 'set_schedule':
-      return { ...state, view: action.view.selectedKey };
-    default:
-      return state;
-  }
-};
+import { useState, useEffect, useReducer } from 'react';
+import request from '../services/request';
 
 const Post = ({ post }) => {
-  const [showComments, setShowComments] = useState(false);
   const [comments, setComments] = useState([]);
-
-  const [postState, setPostState] = useReducer(postReducer, postInitialState);
-
-  // console.log("state in post");
-  // console.log(postState);
 
   useEffect(() => {
     const getComments = async () => {
-      const commentsFromServer = await fetch(`http://localhost:5000/comments?post_id=${post.id}`);
-      const data = await commentsFromServer.json();
-      data.sort(function(a,b){
+      const commentsFromServer = await request.getCommentsFromServer(post.id);
+      commentsFromServer.sort(function(a,b){
         return new Date(b.date_posted) - new Date(a.date_posted)
       });
-      setComments(data);
+      setComments(commentsFromServer);
     };
     getComments();
   }, []);
